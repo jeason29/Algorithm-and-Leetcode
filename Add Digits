@@ -1,0 +1,16 @@
+int addDigits(int num) {
+    
+    int result;
+    if(num<=9) result=num;
+    while(num>9)
+    {
+        result=0;
+        while(num)
+        {   
+            result+=num%10;
+            num=num/10;
+        }
+        num=result;
+    }
+    return result;
+}
